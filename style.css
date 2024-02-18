@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anta&family=Comfortaa:wght@300..700&family=Inconsolata:wght@200..900&family=Indie+Flower&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+.site{
+    margin: 0 auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)),url(img/fundo1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: aliceblue;
+    font-size: 38px;
+    text-align: center;
+    font-family: "Anta", sans-serif;
+}
+
+h2.titulo span{
+    color: rgb(22, 206, 114);
+}
+
+.cabeçalho-links{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabeçalho-links a{
+    color: rgb(31, 216, 248);
+    font-size: 18px;   
+    display: inline-block;
+}
+
+.cabeçalho-links a:hover{
+    color: aliceblue;
+    transition: 0.3s all;
+    transform: scale(1.05);  
+}
+
+.logo i{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid rgb(158, 18, 128);
+    color: rgb(158, 18, 128);
+    border-radius: 90%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.logo i:hover{
+    background-color: aliceblue;
+    color: rgb(175, 130, 7);
+    border-color: rgb(17, 77, 57);
+    transition: 0.5s ;
+    transform: scale(1.2);
+}
+
+.cabeçalho-links button{
+    color: rgb(255, 0, 200);
+    background:transparent;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.cabeçalho-links button:hover{
+    box-shadow: 0px 0px 8px rgb(31, 216, 248);
+    background-color: aliceblue;
+    color: aqua;
+    transition: 0.7s all;
+    transform: scale(1.05);
+}
+
+.interface{
+    padding: 100px 0 0 100px;
+}
+
+section.topo-site{
+    font-family: "Comfortaa", sans-serif;
+    padding: 40px 4%;
+}
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.interface-texto{
+    white-space: nowrap;
+    margin-left: 40px;
+}
+.interface-texto h3{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.interface-texto h1{
+    color: aliceblue;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.interface-texto span{
+    color: rgba(51, 7, 92, 0.63);
+}
+
+.interface-texto p{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.social-media a{
+    color: rgb(39, 199, 146);
+    padding: 10px;
+}
+
+.interface button{
+    color: rgb(255, 0, 200);
+    background:transparent;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Comfortaa", sans-serif;
+}
+.interface button:hover{
+    box-shadow: 0px 0px 8px rgb(31, 216, 248);
+    background-color: aliceblue;
+    color: aqua;
+    transition: 0.7s all;
+    transform: scale(1.05);
+}
+
+
+.interface-img img{
+    border-radius: 15%;
+    width: 60%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+section.habilidades{
+    margin-top: 85px;
+    padding: 40px 4%;
+    background-color: rgba(0, 0, 0, 0.637) 
+}
+
+section.habilidades .flex{
+    gap: 60px;
+}
+
+.habilidades .habilidades-caixas{
+    font-family: "Comfortaa", sans-serif;
+    color: aliceblue;
+    padding: 40px;
+    border: 2px solid #000000e7;
+    margin-top: 32px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.habilidades .habilidades-caixas:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #1402023a;
+}
+
+.habilidades .habilidades-caixas i{
+    font-size: 60px;
+    color: rgba(255, 51, 0, 0.781);
+}
+
+.habilidades .habilidades-caixas h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+}

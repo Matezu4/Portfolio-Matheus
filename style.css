@@ -14,7 +14,7 @@ body{
 
 .site{
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)),url(img/fundo1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)),url(fundo1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;

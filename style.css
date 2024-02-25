@@ -14,14 +14,18 @@ body{
 
 .site{
     margin: 0 auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(img/e.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(fundo1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
 }
 
-header{
+.menu-topo{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 8%;
     font-family: "Comfortaa", sans-serif;
     display: flex;
     justify-content: space-around;
@@ -48,15 +52,18 @@ h2.titulo span{
 
 .cabeçalho-links{
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
     font-weight: 300;
     cursor: pointer;
+    margin-top: -10px;
+    
 }
 
 .cabeçalho-links a{
     color: rgb(31, 216, 248);
     font-size: 18px;   
     display: inline-block;
+    margin-top: 5px;
 }
 
 .cabeçalho-links a:hover{
@@ -65,9 +72,12 @@ h2.titulo span{
     transform: scale(1.05);  
 }
 
+.logo{
+    margin-bottom: 40px;
+}
 .logo i{
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     background: transparent;
     border: 1px solid rgb(158, 18, 128);
     color: rgb(158, 18, 128);
@@ -75,8 +85,9 @@ h2.titulo span{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
+
 }
 
 .logo i:hover{
@@ -90,12 +101,13 @@ h2.titulo span{
 .cabeçalho-links button{
     color: rgb(255, 0, 200);
     background:transparent;
-    border: solid 1px rgb(255, 255, 255);
+    border: solid 1px rgb(180, 223, 236);
     padding: 5px;
     border-radius: 15px;
     font-size: 15px;
     cursor: pointer;
     font-family: "Comfortaa", sans-serif;
+    margin-bottom: 30px;
 }
 
 .cabeçalho-links button:hover{
@@ -107,7 +119,8 @@ h2.titulo span{
 }
 
 .interface{
-    padding: 100px 0 0 100px;
+    padding: 150px 0 0 100px;
+    padding-bottom: 146px;
 }
 
 section.topo-site{
@@ -118,7 +131,7 @@ section.topo-site{
 section.topo-site .flex{
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 150px;
 }
 
 .interface-texto{
@@ -151,12 +164,13 @@ section.topo-site .flex{
 .social-media a{
     color: rgb(39, 199, 146);
     padding: 10px;
+    font-size: 19px;
 }
 
 .interface button{
     color: rgb(255, 0, 200);
     background:transparent;
-    border: solid 1px rgb(255, 255, 255);
+    border: solid 1px rgb(180, 223, 236);
     padding: 5px;
     border-radius: 15px;
     font-size: 15px;
@@ -176,7 +190,6 @@ section.topo-site .flex{
 .interface-img img{
     border-radius: 15%;
     width: 60%;
-    position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 
 }
@@ -191,9 +204,8 @@ section.topo-site .flex{
 }
 
 section.habilidades{
-    margin-top: 85px;
     padding: 40px 4%;
-    background-color: rgba(0, 0, 0, 0.637) 
+    background-color: rgba(0, 0, 0, 0.5) 
 }
 
 section.habilidades .flex{

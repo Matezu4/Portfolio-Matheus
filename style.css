@@ -150,7 +150,7 @@ section.topo-site .flex{
 }
 
 .interface-texto span{
-    color: rgba(51, 7, 92, 0.63);
+    color: rgba(40, 243, 118, 0.89);
 }
 
 .interface-texto p{
@@ -162,9 +162,9 @@ section.topo-site .flex{
 }
 
 .social-media a{
-    color: rgb(39, 199, 146);
+    color: rgb(40, 243, 118, 0.89);
     padding: 10px;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .interface button{

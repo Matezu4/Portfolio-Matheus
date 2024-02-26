@@ -204,6 +204,7 @@ section.topo-site .flex{
 }
 
 section.habilidades{
+    margin-top: 20px;
     padding: 40px 4%;
     background-color: rgba(0, 0, 0, 0.5) 
 }

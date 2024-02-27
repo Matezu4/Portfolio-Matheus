@@ -47,6 +47,7 @@ h2.titulo{
 }
 
 h2.titulo span{
+    margin-top: 20px;
     color: rgb(22, 206, 114);
 }
 
@@ -204,7 +205,6 @@ section.topo-site .flex{
 }
 
 section.habilidades{
-    margin-top: -20px
     padding: 40px 4%;
     background-color: rgba(0, 0, 0, 0.5) 
 }

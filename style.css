@@ -85,7 +85,7 @@ h2.titulo span{
 @media(max-width:900px){
     .nav-list{
         position: absolute;
-        top: 8vh;
+        top: 47px;
         right: 0;
         width: 50vw;
         height: 92vh;

@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anta&family=Comfortaa:wght@300..700&family=Inconsolata:wght@200..900&family=Indie+Flower&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+    background-color: black;
+}
+
+.topo-site{
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(fundo1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu-topo{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 8%;
+    width: 100%;
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: aliceblue;
+    font-size: 38px;
+    text-align: center;
+    font-family: "Anta", sans-serif;
+}
+
+h2.titulo span{
+    margin-top: 20px;
+    color: #ef629a;
+}
+
+.menu-topo a{
+    color: rgb(31, 216, 248);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-topo a:hover{
+    opacity: 0.7;
+}
+.nav-list{
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left:50px;
+}
+
+.menu-moba{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-moba div{
+    width: 32px;
+    height: 2px;
+    margin: 9px;
+    background: #dd2476;
+    transition: 0.3s;
+}
+
+@media(max-width:900px){
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .menu-moba{
+        display: block;
+        margin-right: -20%;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);}
+    to {
+        opacity: 1;
+        transform: translateX(0);}
+  }
+
+  .menu-moba.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .menu-moba.active .line2 {
+    opacity: 0;
+  }
+  
+  .menu-moba.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+.logo i{
+    margin-left: -100px;
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    border: 1px solid #dd2476;
+    color: #dd2476;
+    border-radius: 90%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.logo i:hover{
+    background-color: aliceblue;
+    color: rgb(175, 130, 7);
+    border-color: rgb(17, 77, 57);
+    transition: 0.5s ;
+    transform: scale(1.2);
+}
+
+.interface{
+    padding: 10% 0 0 5%;
+    object-fit: cover;
+}
+
+section.topo-site{
+    font-family: "Comfortaa", sans-serif;
+    padding: 40px 4%;
+    overflow: hidden;
+}
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.interface-texto{
+    margin-left: 40px;
+}
+.interface-texto h3{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.interface-texto h1{
+    color: aliceblue;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.interface-texto span{
+    color: rgba(40, 243, 118, 0.89);
+}
+
+.interface-texto p{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.social-media a{
+    color: rgb(40, 243, 118, 0.89);
+    padding: 10px;
+    font-size: 18px;
+}
+
+.interface button{
+    color: rgb(255, 0, 200);
+    background:transparent;
+    border: solid 1px rgb(180, 223, 236);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Comfortaa", sans-serif;
+}
+.interface button:hover{
+    box-shadow: 0px 0px 8px rgb(31, 216, 248);
+    background-color: aliceblue;
+    color: aqua;
+    transition: 0.7s all;
+    transform: scale(1.05);
+}
+
+
+.interface-img img{
+    border-radius: 15%;
+    width: 300px;
+    height: 300px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+section.habilidades{
+    padding: 40px 4%;
+    background-color: #dd2476;
+    overflow: hidden;
+}
+
+section.habilidades .flex{
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.habilidades .habilidades-caixas{
+    object-fit: cover;
+    background-color: #fbeded;
+    font-family: "Comfortaa", sans-serif;
+    color: #6b7891;
+    padding: 40px;
+    border: 2px solid #000000e7;
+    width: 350px;
+    margin-top: 32px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.habilidades .habilidades-caixas:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 8px #1402023a;
+
+}
+
+.habilidades .habilidades-caixas i{
+    font-size: 60px;
+    color: #2c3e52;
+}
+
+.habilidades .habilidades-caixas h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+section.projetos{
+    padding: 40px 4%;
+    background-color: #09555c;
+    justify-content: center;
+    overflow: hidden;
+}
+
+section.projetos .flex{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projetos .projetos-caixas1{
+    object-fit: cover;
+    font-family: "Comfortaa", sans-serif;
+    color: aliceblue;
+    padding: 60px;
+    border: 2px solid #000000e7;
+    margin: 4% 40px;
+    border-radius: 20px;
+    transition: 0.2s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(sistema\ 2d.jpg);
+    width: 300px;
+    height: 400px;
+}
+
+.projetos .projetos-caixas1 h3{
+    text-align: center;
+    justify-content: center;
+    margin-top: 60%;
+    color: aliceblue;
+}
+
+.projetos .projetos-caixas1:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 8px #1402023a;
+}
+
+.projetos .projetos-caixas2{
+    font-family: "Comfortaa", sans-serif;
+    color: aliceblue;
+    padding: 40px;
+    border: 2px solid #000000e7;
+    margin: 4% 40px;
+    border-radius: 20px;
+    transition: 0.2s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(flo.jpg);
+    background-position: 50%;
+    width: 300px;
+    height: 400px;
+}
+
+.projetos .projetos-caixas2 h3{
+    text-align: center;
+    justify-content: center;
+    margin-top: 60%;
+    color: aliceblue;
+}
+
+.projetos .projetos-caixas2:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 8px #1402023a;
+}
+
+.contato{
+    background-color: #9f44d3;
+    text-align: center;
+    
+}

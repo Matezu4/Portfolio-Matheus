@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-galeria.css">
+
+    <!--magnific-popup css cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+</head>
+<body>
+
+    <div class="text">
+        <h1>Galeria Sousou no Frerien</h1>
+    </div>
+        <div class="galeria">
+            <h1>Fotos</h1>
+            <div class="foto">
+                    <a href="imgs/sousou1.jpg" class="image">
+                        <img src="imgs/sousou1.jpg" alt="">
+                    </a>
+                    <a href="imgs/sousou3.jpg" class="image">
+                        <img src="imgs/sousou3.jpg" alt="">
+                    </a>
+                    <a href="imgs/sousou4.jpg" class="image">
+                        <img src="imgs/sousou4.jpg" alt="""></a>
+                
+            </div>
+            
+            <h1>Videos</h1>
+
+            <div class="video">
+                    <a href="frieren _ my love mine all mine(720P_HD).mp4" class="video"><img src="imgs/flo.jpg"></a>
+                
+                    <a href="[MMV] Frieren_ Beyond Journey_s End x Vaundy(720P_HD)_001.mp4" class="video"><img src="imgs/anao.jpg" alt=""></a>
+                
+                    <a href="Sousou No Frieren - Asphyxia (AMV_EDIT)(720P_HD).mp4" class="video"><img src="imgs/ela.jpg" alt="""></a>
+                
+            </div>
+        </div>
+    
+<!--jquery cdn link-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!--magnific-popup cdn link-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $('.foto').magnificPopup({
+
+        delegate:'a',
+        type:'image',
+        gallery:{
+            enabled:true
+        }
+
+    });
+
+    $('.video').magnificPopup({
+
+        delegate:'a',
+        type:'iframe',
+        gallery:{
+            enabled:true
+        }
+
+    });
+
+});
+
+
+</script>
+
+</body>
+</html>

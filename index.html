@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Matheus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body style="overflow: auto">
+
+    <div class="site">
+        <header>
+            <nav>
+                <div class="menu-topo">
+                    <a class="logo" href=""><i class="fa-regular fa-m"></i></a>
+                    <div class="menu-moba">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-list">
+
+                        <li><a href="#">Sobre mim</a></li>
+
+                        <li><a href="#myhabi">Minhas Qualidades</a></li>
+
+                        <li><a href="#myproje">Projetos</a></li>
+
+                        <li><a href="#myproje">Contato</a></li>
+                    </ul>
+
+                </div> <!--menu-topo-->
+            </nav>
+        </header>
+        <main>
+        <section class="topo-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="interface-texto">
+                        <h3>Opa galera</h3>
+                        <h1>Sou <span>Matheus Rufino</span></h1>
+                        <p>Sou aluno do 2º ano de infomática do IFMA</p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/matheus_ruf_?igsh=OGF3N3pudmZ3YXpl" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/qr/27T7BIODTRFPE1" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <a href="https://github.com/Matezu4" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                        </div><!--social-media-->
+                        <button>Sobre mim</button>
+                    </div><!--interface-logo-->
+                        
+                    <div class="interface-img">
+                            <img src="Img/gago1.jpg" alt="Minha foto">
+                    
+                    </div>
+                </div><!--interface-->
+            </div><!--flex-->
+        </section>
+
+        <section id="myhabi" class="habilidades">
+            <div class="interface-habilidades">
+                <h2 class="titulo">MINHAS <span>HABILIDADES</span></h2>
+                <div class="flex">
+                    <div class="habilidades-caixas">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Programação</h3>
+                        <p>Sou bom em java, pyhton, C...............................</p>
+                    </div>
+
+                    <div class="habilidades-caixas">
+                        <i class="fa-solid fa-list"></i>
+                        <h3>Organização</h3>
+                        <p>Me preocupo bastante com a organição............... </p>
+                    </div>
+
+                    <div class="habilidades-caixas">
+                        <i class="fa-solid fa-calculator"></i>
+                        <h3>Exatas</h3>
+                        <p>Me destaco muito em matérias de exatas.....................</p>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-habilidades-->
+        </section><!--habilidades-->
+
+        
+        <section id="myproje" class="projetos">
+            <div class="interface-projetos">
+                <h2 class="titulo">Meus <span>Projetos</span></h2>
+                <div class="flex">
+                    <div class="projetos-caixas1">
+                        <a href="projeto-sistema/sistema.html">
+                            <h3>Sistema Solar</h3>
+                        </a>
+                    </div>
+                    <div class="projetos-caixas2">
+                        <a href="galeria-site1-main/galeria-site/galeria.html">
+                            <h3>Galeria</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <section id="mycont" class="contatos">
+            <div class="contato">
+
+                <form action="mailto:mrufino@gmail.com" method="post">
+                    <label for="name">Digite o seu nome:</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                    <br>
+
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                    <br>
+
+                    <label for="coment">Escreva um coméntario sobre</label>
+                    <br>
+                    <textarea name="coment" id="coment" cols="20" rows="5" placeholder="Escreva aqui"></textarea>
+
+                    <br>
+                    
+                    <input type="submit" name="enviar" id="enviar">
+
+                </form>
+            </div>
+
+        </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

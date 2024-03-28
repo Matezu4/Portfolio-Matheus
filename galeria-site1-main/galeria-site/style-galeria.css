@@ -1,0 +1,94 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(imgs/fundo-s.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 140vh;
+
+}
+
+.text{
+    width: 100%;
+    height: 14%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.text h1{
+    color: rgb(255, 27, 141);
+}
+
+.galeria{
+    margin: 4% 40px;
+}
+
+.galeria h1{
+    text-align: center;
+    color: rgba(40, 245, 245, 0.836);
+    font-size: 40px;
+}
+
+.galeria .foto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria .video{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria .foto .imgs{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.galeria .foto img{
+    margin: 2% 30px;
+    border: 4px solid rgb(61, 22, 6);
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.galeria .video .vids{
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.galeria .video img{
+    margin: 2% 30px;
+    border: 4px solid rgb(61, 22, 6);
+    border-radius: 20px;
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+
+}
+

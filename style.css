@@ -353,5 +353,27 @@ section.projetos .flex{
 .contato{
     background-color: #9f44d3;
     text-align: center;
-    
+}
+
+form div{
+    padding: 10px;
+    margin: 0 40% 0 35%;
+}
+
+form h3{
+    margin-top: 20px;
+    color: #ef629a;
+    font-family: "Comfortaa", sans-serif;
+}
+
+form input, form textarea{
+    outline: unset;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #771340;
+    border-radius: 20px;
+}
+
+form textarea{
+    margin-bottom: 20px;
 }

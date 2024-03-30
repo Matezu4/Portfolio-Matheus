@@ -350,9 +350,13 @@ section.projetos .flex{
     box-shadow: 0 0 8px #1402023a;
 }
 
-.contato{
-    background-color: #9f44d3;
+.contato-box{
+    padding: 4% 40px;
+    background-color: #370a52;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+
 }
 
 form div{

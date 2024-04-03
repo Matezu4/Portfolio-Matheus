@@ -164,7 +164,8 @@ section.topo-site .flex{
 }
 
 .interface-texto{
-    margin-left: 40px;
+    margin-left: 4%;
+    margin-top: 5%;
 }
 .interface-texto h3{
     color: aliceblue;
@@ -217,6 +218,7 @@ section.topo-site .flex{
 
 .interface-img img{
     border-radius: 15%;
+    margin-top: 10%;
     width: 300px;
     height: 300px;
     animation: flutuar 2s ease-in-out infinite alternate;

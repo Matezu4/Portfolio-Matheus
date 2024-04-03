@@ -26,7 +26,7 @@ body{
 .menu-topo{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 8%;
+    height: 10%;
     width: 100%;
     font-family: "Comfortaa", sans-serif;
     display: flex;
@@ -40,7 +40,7 @@ body{
 }
 
 h2.titulo{
-    color: aliceblue;
+    color: #ff5f6d;
     font-size: 38px;
     text-align: center;
     font-family: "Anta", sans-serif;
@@ -48,11 +48,11 @@ h2.titulo{
 
 h2.titulo span{
     margin-top: 20px;
-    color: #ef629a;
+    color: #ffe2fb;
 }
 
 .menu-topo a{
-    color: rgb(31, 216, 248);
+    color: #ffe2fb;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -131,19 +131,9 @@ h2.titulo span{
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-.logo i{
-    margin-left: -100px;
-    height: 35px;
-    width: 35px;
-    background: transparent;
-    border: 1px solid #dd2476;
-    color: #dd2476;
-    border-radius: 90%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    cursor: pointer;
+.logo img{
+    height: 80px;
+    width: 60px;
 
 }
 
@@ -188,7 +178,7 @@ section.topo-site .flex{
 }
 
 .interface-texto span{
-    color: rgba(40, 243, 118, 0.89);
+    color: #dd2476;
 }
 
 .interface-texto p{
@@ -200,13 +190,13 @@ section.topo-site .flex{
 }
 
 .social-media a{
-    color: rgb(40, 243, 118, 0.89);
+    color: #dd2476;
     padding: 10px;
     font-size: 18px;
 }
 
 .interface button{
-    color: rgb(255, 0, 200);
+    color: #30c176;
     background:transparent;
     border: solid 1px rgb(180, 223, 236);
     padding: 5px;

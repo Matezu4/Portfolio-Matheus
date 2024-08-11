@@ -11,16 +11,18 @@
 
 body{
     overflow: hidden;
-    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(Img/fundo1.jpg);
+    background-size: 120rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .topo-site{
     margin: 0 auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(fundo1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 }
 
 .menu-topo{
@@ -40,7 +42,7 @@ body{
 }
 
 h2.titulo{
-    color: #ff5f6d;
+    color: #aac28b;
     font-size: 38px;
     text-align: center;
     font-family: "Anta", sans-serif;
@@ -48,7 +50,7 @@ h2.titulo{
 
 h2.titulo span{
     margin-top: 20px;
-    color: #ffe2fb;
+    color: #ffffff;
 }
 
 .menu-topo a{
@@ -62,6 +64,7 @@ h2.titulo span{
 }
 .nav-list{
     display: flex;
+
 }
 
 .nav-list li{
@@ -78,7 +81,7 @@ h2.titulo span{
     width: 32px;
     height: 2px;
     margin: 9px;
-    background: #dd2476;
+    background: #846059;
     transition: 0.3s;
 }
 
@@ -103,6 +106,9 @@ h2.titulo span{
     .menu-moba{
         display: block;
         margin-right: -20%;
+    }
+    .flex{
+        gap: 200px;
     }
 }
 
@@ -136,6 +142,11 @@ h2.titulo span{
     width: 60px;
 
 }
+@media(max-width:900px){
+    .logo img{
+        margin-left: -150px;
+    }
+}
 
 .logo i:hover{
     background-color: aliceblue;
@@ -146,7 +157,7 @@ h2.titulo span{
 }
 
 .interface{
-    padding: 10% 0 0 5%;
+    padding: 10% 0 0 8%;
     object-fit: cover;
 }
 
@@ -161,6 +172,15 @@ section.topo-site .flex{
     justify-content: center;
     gap: 100px;
     flex-wrap: wrap;
+}
+
+@media(max-width:900px){
+    section.topo-site .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        flex-wrap: wrap;
+    }
 }
 
 .interface{
@@ -182,7 +202,7 @@ section.topo-site .flex{
 }
 
 .interface-texto span{
-    color: #dd2476;
+    color: #bd7a70;
 }
 
 .interface-texto p{
@@ -191,16 +211,17 @@ section.topo-site .flex{
     font-weight: 300;
     margin-top: 8px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .social-media a{
-    color: #dd2476;
-    padding: 10px;
-    font-size: 18px;
+    color: #bd7a70;
+    padding: 12px;
+    font-size: 22px;
 }
 
 .interface button{
-    color: #30c176;
+    color: #846059;
     background:transparent;
     border: solid 1px rgb(180, 223, 236);
     padding: 5px;
@@ -218,27 +239,14 @@ section.topo-site .flex{
     transform: scale(1.05);
 }
 
-
 .interface-img img{
     border-radius: 15%;
     width: 300px;
     height: 300px;
-    animation: flutuar 2s ease-in-out infinite alternate;
-
-}
-
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 20px;
-    }
 }
 
 section.habilidades{
-    padding: 40px 4%;
-    background-color: #dd2476;
+    padding: 0% 4%;
     overflow: hidden;
 }
 
@@ -251,43 +259,38 @@ section.habilidades .flex{
 }
 
 .habilidades .habilidades-caixas{
-    object-fit: cover;
-    background-color: #fbeded;
     font-family: "Comfortaa", sans-serif;
-    color: #6b7891;
+    background-color: #b8a597da;
+    color: #000000;
     padding: 40px;
     border: 2px solid #000000e7;
     width: 350px;
+    height: 250px;
     margin-top: 32px;
     border-radius: 20px;
     transition: 0.3s;
 }
 
-.habilidades .habilidades-caixas:hover{
-    transform: scale(0.95);
-    box-shadow: 0 0 8px #1402023a;
-
-}
-
 .habilidades .habilidades-caixas i{
     font-size: 60px;
-    color: #2c3e52;
+    color: #000000;
 }
 
 .habilidades .habilidades-caixas h3{
     font-size: 28px;
     margin: 15px 0;
+    color: #220520;
 }
 
 section.projetos{
-    padding: 40px 4%;
-    background-color: #09555c;
+    margin-top: 10%;
+    padding: 0px 4%;
     justify-content: center;
     overflow: hidden;
 }
 
 section.projetos .flex{
-    gap: 20px;
+    gap: 0px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -301,7 +304,7 @@ section.projetos .flex{
     margin: 4% 40px;
     border-radius: 20px;
     transition: 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(sistema\ 2d.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(Img/sistema\ 2d.jpg);
     width: 300px;
     height: 400px;
 }
@@ -326,7 +329,7 @@ section.projetos .flex{
     margin: 4% 40px;
     border-radius: 20px;
     transition: 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(flo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(Img/flo.jpg);
     background-position: 50%;
     width: 300px;
     height: 400px;
@@ -344,9 +347,33 @@ section.projetos .flex{
     box-shadow: 0 0 8px #1402023a;
 }
 
+.projetos .projetos-caixas3{
+    font-family: "Comfortaa", sans-serif;
+    color: aliceblue;
+    padding: 40px;
+    border: 2px solid #000000e7;
+    margin: 4% 40px;
+    border-radius: 20px;
+    transition: 0.2s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(Img/java.jpg);
+    background-position: 50% -70;
+    width: 300px;
+    height: 400px;
+}
+
+.projetos .projetos-caixas3 h3{
+    text-align: center;
+    justify-content: center;
+    margin-top: 60%;
+    color: aliceblue;
+}
+
+.projetos .projetos-caixas3:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 8px #1402023a;
+}
 .contato-box{
     padding: 4% 40px;
-    background-color: #370a52;
     justify-content: center;
     align-items: center;
     text-align: center;

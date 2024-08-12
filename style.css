@@ -42,7 +42,7 @@ body{
 }
 
 h2.titulo{
-    color: #aac28b;
+    color: #f76a6a;
     font-size: 38px;
     text-align: center;
     font-family: "Anta", sans-serif;
@@ -203,7 +203,7 @@ section.topo-site .flex{
 }
 
 .interface-texto span{
-    color: #bd7a70;
+    color: #ffb996;
 }
 
 .interface-texto p{
@@ -216,7 +216,7 @@ section.topo-site .flex{
 }
 
 .social-media a{
-    color: #bd7a70;
+    color: #ffb996;
     padding: 12px;
     font-size: 22px;
 }
@@ -242,8 +242,8 @@ section.topo-site .flex{
 
 .interface-img img{
     border-radius: 5%;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 section.habilidades{

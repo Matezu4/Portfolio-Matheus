@@ -1,404 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anta&family=Comfortaa:wght@300..700&family=Inconsolata:wght@200..900&family=Indie+Flower&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Matheus</title>
+    <link rel="icon" href="Img/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body style="overflow: auto">
 
-*{
-    margin:  0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-}
+    <div class="site" id="site">
+        <header>
+            <nav>
+                <div class="menu-topo">
+                    <a class="logo" href="#site"><img src="eve.png" alt=""></i></a>
+                    <div class="menu-moba">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-list">
 
-body{
-    overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(Img/fundo1.jpg);
-    background-size: 120rem;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+                        <li><a href="">Sobre mim</a></li>
 
-.topo-site{
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120vh;
-}
+                        <li><a href="#myhabi">Habilidades</a></li>
 
-.menu-topo{
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 10%;
-    width: 100%;
-    font-family: "Comfortaa", sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
+                        <li><a href="#myproje">Projetos</a></li>
 
-.flex{
-    display: flex;
-}
+                        <li><a href="contato/contato.html">Contato</a></li>
+                    </ul>
 
-h2.titulo{
-    color: #aac28b;
-    font-size: 38px;
-    text-align: center;
-    font-family: "Anta", sans-serif;
-}
+                </div> <!--menu-topo-->
+            </nav>
+        </header>
+        <main>
+        <section class="topo-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="interface-texto">
+                        <h3>Olá</h3>
+                        <h1>Sou <span>Matheus Rufino</span></h1>
+                        <p>Sou estudante do 2º ano do curso técnico em 
+                        <br>Informática do IFMA Campus Açailândia. 
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/matheus_ruf_?igsh=OGF3N3pudmZ3YXpl" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/qr/27T7BIODTRFPE1" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://mail.google.com/mail/u/mrufino@acad.ifma.edu.br/?view=cm&amp;to=mrufino@acad.ifma.edu.br" target="_blank" ><i class="fa-regular fa-envelope"></i></a>
+                            <a href="https://github.com/Matezu4" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                        </div><!--social-media-->
+                    </div><!--interface-logo-->
+                        
+                    <div class="interface-img">
+                            <img src="Img/charm by clairo.jpeg" alt="Album clairo">
+                    
+                    </div>
+                </div><!--interface-->
+            </div><!--flex-->
+        </section>
 
-h2.titulo span{
-    margin-top: 20px;
-    color: #ffffff;
-}
+        <section id="myhabi" class="habilidades">
+            <div class="interface-habilidades">
+                <h2 class="titulo">MINHAS <span>HABILIDADES</span></h2>
+                <div class="flex">
+                    <div class="habilidades-caixas">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Programação</h3>
+                        <p>Tenho boa prodiciência em várias linguagens de programação, como phyton, java e C</p>
+                    </div>
 
-.menu-topo a{
-    color: #ffe2fb;
-    text-decoration: none;
-    transition: 0.3s;
-}
+                    <div class="habilidades-caixas">
+                        <i class="fa-solid fa-list"></i>
+                        <h3>Organização</h3>
+                        <p>Sou bastante atento em assuntos relacionados a organização </p>
+                    </div>
 
-.menu-topo a:hover{
-    opacity: 0.7;
-}
-.nav-list{
-    display: flex;
+                    <div class="habilidades-caixas">
+                        <i class="fa-solid fa-calculator"></i>
+                        <h3>Exatas</h3>
+                        <p>Tenho como materias de destaque as associadas ao ramo de exatas</p>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-habilidades-->
+        </section><!--habilidades-->
 
-}
+        
+        <section id="myproje" class="projetos">
+            <div class="interface-projetos">
+                <h2 class="titulo">Meus <span>Projetos</span></h2>
+                <div class="flex">
+                    <div class="projetos-caixas1">
+                        <a href="projeto-sistema/sistema.html">
+                            <h3>Sistema Solar</h3>
+                        </a>
+                    </div>
+                    <div class="projetos-caixas2">
+                        <a href="galeria-site1-main/galeria-site/galeria.html">
+                            <h3>Galeria</h3>
+                        </a>
+                    </div>
+                    <div class="projetos-caixas3">
+                        <a href="https://replit.com/@Matezu4/Projeto-posto-gasolina?v=1">
+                            <h3>Empresa posto de gasolina</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.nav-list li{
-    letter-spacing: 3px;
-    margin-left:50px;
-}
-
-.menu-moba{
-    display: none;
-    cursor: pointer;
-}
-
-.menu-moba div{
-    width: 32px;
-    height: 2px;
-    margin: 9px;
-    background: #846059;
-    transition: 0.3s;
-}
-
-@media(max-width:900px){
-    .nav-list{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: rgba(0, 0, 0, 0.5);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .nav-list li{
-        margin-left: 0;
-        opacity: 0;
-    }
-    .menu-moba{
-        display: block;
-        margin-right: -20%;
-    }
-    .flex{
-        gap: 200px;
-    }
-}
-
-.nav-list.active {
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);}
-    to {
-        opacity: 1;
-        transform: translateX(0);}
-  }
-
-  .menu-moba.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .menu-moba.active .line2 {
-    opacity: 0;
-  }
-  
-  .menu-moba.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-
-.logo img{
-    height: 80px;
-    width: 60px;
-
-}
-@media(max-width:900px){
-    .logo img{
-        margin-left: -150px;
-    }
-}
-
-.logo i:hover{
-    background-color: aliceblue;
-    color: rgb(175, 130, 7);
-    border-color: rgb(17, 77, 57);
-    transition: 0.5s ;
-    transform: scale(1.2);
-}
-
-.interface{
-    padding: 10% 0 0 8%;
-    object-fit: cover;
-}
-
-section.topo-site{
-    font-family: "Comfortaa", sans-serif;
-    padding: 40px 4%;
-    overflow: hidden;
-}
-
-section.topo-site .flex{
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    flex-wrap: wrap;
-}
-
-@media(max-width:900px){
-    section.topo-site .flex{
-        align-items: center;
-        justify-content: center;
-        gap: 100px;
-        flex-wrap: wrap;
-    }
-}
-
-.interface{
-    margin-top: 5%;
-}
-
-.interface-texto{
-    margin-left: 4%;
-}
-.interface-texto h3{
-    color: aliceblue;
-    font-size: 20px;
-}
-
-.interface-texto h1{
-    color: aliceblue;
-    margin-top: 10px;
-    font-size: 40px;
-}
-
-.interface-texto span{
-    color: #bd7a70;
-}
-
-.interface-texto p{
-    color: aliceblue;
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 8px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.social-media a{
-    color: #bd7a70;
-    padding: 12px;
-    font-size: 22px;
-}
-
-.interface button{
-    color: #846059;
-    background:transparent;
-    border: solid 1px rgb(180, 223, 236);
-    padding: 5px;
-    border-radius: 15px;
-    font-size: 15px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-family: "Comfortaa", sans-serif;
-}
-.interface button:hover{
-    box-shadow: 0px 0px 8px rgb(31, 216, 248);
-    background-color: aliceblue;
-    color: aqua;
-    transition: 0.7s all;
-    transform: scale(1.05);
-}
-
-.interface-img img{
-    border-radius: 15%;
-    width: 300px;
-    height: 300px;
-}
-
-section.habilidades{
-    padding: 0% 4%;
-    overflow: hidden;
-}
-
-section.habilidades .flex{
-    gap: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.habilidades .habilidades-caixas{
-    font-family: "Comfortaa", sans-serif;
-    background-color: #b8a597da;
-    color: #000000;
-    padding: 40px;
-    border: 2px solid #000000e7;
-    width: 350px;
-    height: 250px;
-    margin-top: 32px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.habilidades .habilidades-caixas i{
-    font-size: 60px;
-    color: #000000;
-}
-
-.habilidades .habilidades-caixas h3{
-    font-size: 28px;
-    margin: 15px 0;
-    color: #220520;
-}
-
-section.projetos{
-    margin-top: 10%;
-    padding: 0px 4%;
-    justify-content: center;
-    overflow: hidden;
-}
-
-section.projetos .flex{
-    gap: 0px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.projetos .projetos-caixas1{
-    object-fit: cover;
-    font-family: "Comfortaa", sans-serif;
-    color: aliceblue;
-    padding: 60px;
-    border: 2px solid #000000e7;
-    margin: 4% 40px;
-    border-radius: 20px;
-    transition: 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(Img/sistema\ 2d.jpg);
-    width: 300px;
-    height: 400px;
-}
-
-.projetos .projetos-caixas1 h3{
-    text-align: center;
-    justify-content: center;
-    margin-top: 60%;
-    color: aliceblue;
-}
-
-.projetos .projetos-caixas1:hover{
-    transform: scale(0.95);
-    box-shadow: 0 0 8px #1402023a;
-}
-
-.projetos .projetos-caixas2{
-    font-family: "Comfortaa", sans-serif;
-    color: aliceblue;
-    padding: 40px;
-    border: 2px solid #000000e7;
-    margin: 4% 40px;
-    border-radius: 20px;
-    transition: 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(Img/flo.jpg);
-    background-position: 50%;
-    width: 300px;
-    height: 400px;
-}
-
-.projetos .projetos-caixas2 h3{
-    text-align: center;
-    justify-content: center;
-    margin-top: 60%;
-    color: aliceblue;
-}
-
-.projetos .projetos-caixas2:hover{
-    transform: scale(0.95);
-    box-shadow: 0 0 8px #1402023a;
-}
-
-.projetos .projetos-caixas3{
-    font-family: "Comfortaa", sans-serif;
-    color: aliceblue;
-    padding: 40px;
-    border: 2px solid #000000e7;
-    margin: 4% 40px;
-    border-radius: 20px;
-    transition: 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(Img/java.jpg);
-    background-position: 50% -70;
-    width: 300px;
-    height: 400px;
-}
-
-.projetos .projetos-caixas3 h3{
-    text-align: center;
-    justify-content: center;
-    margin-top: 60%;
-    color: aliceblue;
-}
-
-.projetos .projetos-caixas3:hover{
-    transform: scale(0.95);
-    box-shadow: 0 0 8px #1402023a;
-}
-.contato-box{
-    padding: 4% 40px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-form div{
-    padding: 10px;
-    margin: 0 40% 0 35%;
-}
-
-form h3{
-    margin-top: 20px;
-    color: #ef629a;
-    font-family: "Comfortaa", sans-serif;
-}
-
-form input, form textarea{
-    outline: unset;
-    padding: 20px;
-    width: 300px;
-    border: 1px solid #771340;
-    border-radius: 20px;
-}
-
-form textarea{
-    margin-bottom: 20px;
-}
+</body>
+</html>
